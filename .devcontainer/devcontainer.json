@@ -1,0 +1,12 @@
+{
+    "name": "Node & Python Dev Container",
+    "dockerComposeFile": "../docker-compose.yaml",
+    "service": "app",
+    "workspaceFolder": "/usr/src/app",
+    "extensions": [
+        "ms-python.python"
+    ],
+    "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+    }
+}

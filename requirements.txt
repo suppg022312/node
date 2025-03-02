@@ -1,0 +1,5 @@
+sqlalchemy
+gradio
+streamlit
+jupyter
+uv

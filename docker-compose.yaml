@@ -1,0 +1,12 @@
+services:
+  app:
+    image: nikolaik/python-nodejs:python3.9-nodejs16
+    working_dir: /usr/src/app
+    volumes:
+      - /media/docker/node:/usr/src/app
+    ports:
+      - "3760:3000"
+      - "8671:8000"
+      - "8888:8888"
+    command: bash -c "pip install -r requirements.txt && npm install && jupyter notebook --ip=0.0.0.0 --allow-root --NotebookApp.token='' --NotebookApp.password='' & tail -f /dev/null"
+    # WARNING: Disabling Jupyter Notebook authentication is for local development convenience only. Do not do this in production.

@@ -2,4 +2,6 @@ sqlalchemy
 gradio
 streamlit
 jupyter
+flask
+flask-api
 uv
